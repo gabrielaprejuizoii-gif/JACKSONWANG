@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Lesson: Jackson Wang, Fame & Fan Culture</title>
+<style>
+:root{--bg:#faf8ff;--card:#fff;--ink:#2a2140;--mute:#6b6385;--lil:#c9b6f2;--lil2:#efe8fd;--pur:#7c4dcc;--pur2:#5b2fa8;--pink:#f3d9f0;--ok:#2f8f6b;--line:#e4dbf6;
+box-sizing:border-box;color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Nunito",system-ui,sans-serif}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.2;margin:.2em 0 .4em}
+h1{font-size:clamp(2rem,6vw,3.2rem)}h2{font-size:1.7rem}h3{font-size:1.15rem}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 120px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(250,248,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{height:5px;background:var(--lil2)}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lil),var(--pur));transition:width .4s}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 18px;max-width:860px;margin:auto}
+nav button{flex:none;border:1px solid var(--line);background:#fff;color:var(--mute);border-radius:99px;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer}
+nav button.on{background:var(--pur);color:#fff;border-color:var(--pur)}nav button.seen:not(.on){background:var(--lil2);color:var(--pur2)}
+html{scroll-behavior:smooth}section{display:block;padding:56px 0 8px;border-top:1px solid var(--line);scroll-margin-top:60px}section:first-of-type{border-top:0;padding-top:26px}
+.hero{background:linear-gradient(135deg,#efe8fd,#f9e8f6 70%,#fff);border-radius:28px;padding:34px 26px;position:relative;overflow:hidden}
+.hero svg{position:absolute;right:14px;top:10px;width:110px;opacity:.55}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:14px 0}
+.note{background:var(--lil2);border-radius:16px;padding:14px 18px;margin:14px 0}
+.warn{background:#fff4e8;border:1px solid #f3d3ae;border-radius:16px;padding:14px 18px;margin:14px 0}
+button.btn,a.btn{display:inline-block;background:var(--pur);color:#fff;border:0;border-radius:99px;padding:10px 20px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+button.btn:hover,a.btn:hover{background:var(--pur2)}button.ghost{background:#fff;color:var(--pur2);border:1px solid var(--lil)}
+textarea{width:100%;min-height:110px;border:1px solid var(--lil);border-radius:14px;padding:12px;font:inherit;background:#fff;color:var(--ink);resize:vertical}
+:focus-visible{outline:3px solid var(--pur);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.vc{cursor:pointer;text-align:left;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;font:inherit;color:inherit}
+.vc b{font-size:1.05rem;color:var(--pur2)}.vc .more{display:none;margin-top:8px;font-size:.93rem}.vc.open{background:var(--lil2)}.vc.open .more{display:block}
+.tag{display:inline-block;font-size:.72rem;border-radius:99px;padding:1px 9px;background:var(--pink);color:#7a2a73;margin-left:6px}
+.dlg p{margin:.3em 0}.dlg b{color:var(--pur2)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.opt{border:1px solid var(--lil);background:#fff;border-radius:14px;padding:9px 14px;font:inherit;cursor:pointer;color:var(--ink)}
+.opt.good{background:#e3f6ee;border-color:var(--ok)}.opt.bad{background:#fdeaea;border-color:#d66}
+.big{font-size:1.3rem;font-family:"Fraunces",Georgia,serif;min-height:3.2em}
+.lv{font-size:.8rem;color:var(--pur2);font-weight:700}
+.fc{perspective:900px;height:210px;cursor:pointer;max-width:440px;margin:14px auto}
+.fc div{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.fc.flip div{transform:rotateY(180deg)}
+.fc span{position:absolute;inset:0;backface-visibility:hidden;border-radius:24px;padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.fc .f{background:linear-gradient(135deg,var(--lil2),#fff);border:1px solid var(--lil);font:700 1.5rem "Fraunces",Georgia,serif;color:var(--pur2)}
+.fc .b{background:#fff;border:2px solid var(--pur);transform:rotateY(180deg);font-size:1rem}
+.pager{display:flex;justify-content:space-between;margin-top:28px}
+#helpBtn{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;box-shadow:0 6px 20px rgba(91,47,168,.3)}
+#help{position:fixed;left:0;right:0;bottom:0;z-index:10;background:#fff;border-top:3px solid var(--pur);border-radius:24px 24px 0 0;padding:20px 20px calc(24px + env(safe-area-inset-bottom,0px));max-height:60vh;overflow:auto;transform:translateY(110%);transition:transform .3s;box-shadow:0 -10px 40px rgba(60,30,110,.2)}
+#help.open{transform:none}#help .in{max-width:860px;margin:auto}
+.small{font-size:.88rem;color:var(--mute)}.tb{border-collapse:collapse;width:100%;min-width:420px}.tb td,.tb th{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;font-size:.93rem}.tb th{color:var(--pur2)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header class="top"><div class="bar"><i id="pb"></i></div><nav id="nav"></nav></header>
+<div class="wrap">
+
+<section id="s0"><div class="hero">
+<svg viewBox="0 0 100 100" fill="none" stroke="#7c4dcc" stroke-width="3" stroke-linecap="round"><path d="M35 75V25l40-8v50"/><circle cx="27" cy="75" r="9" fill="#c9b6f2"/><circle cx="67" cy="67" r="9" fill="#c9b6f2"/></svg>
+<h1>Hey there! 👋<br>Let’s talk about Jackson Wang.</h1>
+<p>Fame, fandom and the moment you meet your idol. This isn’t a test. It’s a conversation, so answer the way you’d talk to a friend, with reasons and examples. Don’t worry about being perfect.</p>
+<p class="small">You’ll practice: fan-culture slang, <b>would</b> for imaginary situations, speaking, a short writing task and two fun homeworks. Use the 🇧🇷 button anytime you get stuck.</p>
+<button class="btn" onclick="go(1)">Let’s start</button></div></section>
+
+<section id="s1"><h2>Warm-up: your music world</h2>
+<p>Pick a question, take a breath, and answer out loud for about 30 seconds. Then add one more detail.</p>
+<div class="card"><div class="lv" id="wl"></div><div class="big" id="wq">Tap the button to get a question.</div>
+<button class="btn" onclick="deal('w')">Give me a question</button></div>
+<div class="note"><b>Your turn:</b> What’s the first Jackson Wang song you remember? Where were you, and how did it make you feel?<textarea placeholder="Type or just say it out loud first…"></textarea></div>
+<div class="card"><h3>Quick facts to chat about</h3>
+<p>Jackson Wang was born in Hong Kong, trained as a fencer, then moved to South Korea as a teenager to become a K-pop idol. He debuted with the group GOT7 and later built a solo career with albums like <i>Magic Man</i>. <i>Do you think leaving home as a teenager to chase fame is a gift or a risk? Why?</i></p></div></section>
+
+<section id="s2"><h2>Real fan-culture English</h2>
+<p>Tap a card to open it. Notice the little tag: not everything is equally casual or equally natural, so choose carefully.</p>
+<div class="grid" id="vgrid"></div>
+<div class="warn"><h3>⚠️ Careful: “have an attack”</h3>
+<p>“I had an attack when I saw him” sounds incomplete or even <b>medical</b> (a panic attack? an asthma attack?). It’s not how people usually describe excitement. Say instead:</p>
+<p>✅ <b>I freaked out.</b> &nbsp; ✅ <b>I lost my mind.</b> &nbsp; ✅ <b>I had a fit</b> (very informal, funny and exaggerated; it can also mean “got angry”, so use context).</p></div>
+<div class="card dlg"><h3>In context</h3>
+<p><b>Mia:</b> Okay, so I literally saw Jackson Wang at the airport.</p>
+<p><b>Kai:</b> Stop. Did you freak out?</p>
+<p><b>Mia:</b> I was so starstruck I couldn’t even speak. My friend was fangirling so hard, she almost dropped her phone!</p>
+<p><b>Kai:</b> I’m literally dying. I would’ve lost my mind. I still can’t get over his last album.</p></div>
+<div class="card"><h3>Quick check: which sounds most natural?</h3><div id="chk"></div></div></section>
+
+<section id="s3"><h2>Imagine this… with WOULD</h2>
+<div class="note"><p><b>The idea:</b> use <b>would</b> for things that aren’t real, just imagined. <br>If + past → <b>would</b> + verb: <i>If I met him, I <b>would</b> probably freak out.</i> <br>Questions: <i>What <b>would</b> you do…? <b>Would</b> you…?</i></p>
+<p class="small">Pro tip: answer with <i>I’d…</i>, then add “because…” and a follow-up thought. B2 speakers always explain!</p></div>
+<div class="card"><div class="lv" id="ql"></div><div class="big" id="qq">Ready for an imaginary situation?</div>
+<div class="row"><button class="btn" onclick="deal('q')">Next situation</button><button class="btn ghost" onclick="deal('q','Challenge')">Challenge me 🔥</button></div></div>
+<div class="card"><h3>Would you rather…?</h3><div id="wyr"></div></div>
+<div class="card"><h3>🔥 Challenge: full answer</h3>
+<p>Imagine Jackson Wang invites you on stage during a concert, in front of thousands of people. What would you do? Explain your reasoning and say how you would feel afterwards (at least 4 sentences using <b>would</b>).</p>
+<textarea id="ch" placeholder="If he invited me on stage, I would…"></textarea>
+<p class="small">Follow-up to answer next: <i>Would your answer change if your best friend were watching?</i></p></div></section>
+
+<section id="s4"><h2>A real news story: Brazil</h2>
+<p>In May 2023, a fan groped singer Jackson Wang onstage during his concert in Brazil, drawing criticism. Reports said she had been invited up on stage to sing with him. Read the article, then talk about it.</p>
+<p><a class="btn" href="https://cnalifestyle.channelnewsasia.com/entertainment/jackson-wang-concert-brazil-fan-inappropriate-touching-359656" target="_blank" rel="noopener">📰 Read the CNA article</a></p>
+<p class="small">The link opens in a new tab. Come back when you’re done.</p>
+<div class="card"><h3>📖 Word focus: <i>to grope</i></h3>
+<p><b>grope</b> (verb) = to touch someone’s body, especially private parts, in a sexual way without their permission. It is a form of sexual harassment or assault, so it’s serious. It is never “just excitement”, and it can happen to anyone, including famous men.</p>
+<p class="small">Another meaning: <i>grope for</i> something = to search for it with your hands because you can’t see well: <i>I groped for the light switch.</i></p>
+<details><summary><b>Show the conjugation</b></summary>
+<p class="small">Regular verb. Because it already ends in <i>-e</i>, you add only <b>-d</b> for the past, and you drop the <i>e</i> before <i>-ing</i>.</p>
+<div style="overflow-x:auto"><table class="tb"><tr><th>Form</th><th>Grope</th><th>Example</th></tr>
+<tr><td>Base</td><td>grope</td><td>Nobody should grope another person.</td></tr>
+<tr><td>Present simple</td><td>I / you / we / they <b>grope</b><br>he / she / it <b>gropes</b></td><td>He never gropes anyone.</td></tr>
+<tr><td>Past simple</td><td><b>groped</b></td><td>A fan groped the singer onstage.</td></tr>
+<tr><td>Past participle</td><td><b>groped</b></td><td>Fans have groped artists before, and it has to stop.</td></tr>
+<tr><td>-ing form</td><td><b>groping</b></td><td>She was groping him while he sang.</td></tr>
+<tr><td>Passive</td><td>was / were <b>groped</b></td><td>The singer was groped in front of thousands.</td></tr>
+<tr><td>Future</td><td>will <b>grope</b></td><td>Security will remove anyone who gropes an artist.</td></tr>
+<tr><td>Would</td><td>would <b>grope</b></td><td>A respectful fan would never grope anyone.</td></tr></table></div></details>
+<p><b>Your turn:</b> write two sentences about the story: one <b>active</b> (<i>A fan groped…</i>) and one <b>passive</b> (<i>The singer was groped…</i>).</p><textarea style="min-height:80px" placeholder="Active: …&#10;Passive: …"></textarea></div>
+<div class="card"><h3>Let’s discuss</h3><div id="dq"></div></div>
+<div class="note">Tip: excitement is normal, but touching someone without consent isn’t. Try using: <i>cross a line, consent, personal space, get carried away, boundaries, lose control</i>.</div></section>
+
+<section id="s5"><h2>Speaking lab</h2>
+<div class="card"><h3>A. What would you do?</h3><div class="big" id="sq">Tap for a surprise situation.</div><button class="btn" onclick="deal('s')">Surprise me</button></div>
+<div class="card"><h3>B. Roleplay: the celebrity encounter</h3>
+<p>You’re at a café. <b>the fan</b> is a huge fan. Your teacher (or a friend) is <b>the celebrity</b> who just wants a quiet coffee. Keep it funny but respectful.</p>
+<p class="small">Fan: greet them, explain why their music matters to you, ask for a photo (politely!). Celebrity: be kind, but set a boundary if needed.</p>
+<div class="row"><button class="btn ghost" onclick="rp()">New twist</button></div><p id="rpt" class="big" style="min-height:2em"></p></div>
+<div class="card"><h3>C. Unpopular opinions</h3><p id="op" class="big"></p>
+<div class="row"><button class="opt" onclick="opn('agree')">Agree</button><button class="opt" onclick="opn('disagree')">Disagree</button><button class="opt" onclick="opn('depends')">It depends</button></div>
+<p id="opf" class="small"></p></div>
+<div class="card"><h3>D. Longer speaking challenge ⏱</h3>
+<p>Talk for <b>2 minutes</b>: “Fans and celebrities: what is each side responsible for?” Use at least 4 expressions from this lesson and 3 sentences with <b>would</b>.</p>
+<div class="row"><button class="btn" id="tb" onclick="tm()">Start 2:00</button><span id="tt" class="big" style="min-height:0"></span></div></div></section>
+
+<section id="s6"><h2>Writing: one day with Jackson</h2>
+<p><b>“If I Could Spend One Day With Jackson Wang…”</b> Write 120–180 words: where you’d go, what you’d talk about and how you’d feel.</p>
+<textarea id="wt" style="min-height:230px" oninput="wc()" placeholder="If I could spend one day with Jackson Wang, I would…"></textarea>
+<p class="small" id="wcn">0 words</p>
+<div class="card"><h3>Self-check</h3><label><input type="checkbox"> 120–180 words</label><br><label><input type="checkbox"> At least 5 lesson expressions</label><br><label><input type="checkbox"> <b>would</b> used correctly (would + base verb)</label><br><label><input type="checkbox"> Clear beginning, middle and end</label><br><label><input type="checkbox"> I read it aloud and it sounds natural</label></div>
+<div class="row"><button class="btn" onclick="cp('wt',this)">Copy to send for feedback</button></div>
+<p class="small">Send it to your teacher: you’ll get feedback on grammar, vocabulary, coherence and naturalness.</p></section>
+
+<section id="s7"><h2>Flashcards</h2><p>Say the expression, use it in your own sentence, then flip the card. Tap to flip.</p>
+<div class="fc" id="fc" onclick="this.classList.toggle('flip')"><div><span class="f" id="ff"></span><span class="b" id="fb"></span></div></div>
+<div class="row" style="justify-content:center"><button class="btn ghost" onclick="fcn(-1)">Back</button><span id="fcn" class="small"></span><button class="btn" onclick="fcn(1)">Next</button><button class="btn ghost" onclick="fcs()">Shuffle</button></div></section>
+
+<section id="s8"><h2>Fun homework</h2>
+<div class="card"><h3>🎙 Task 1: voice message</h3><p>Record a 1–2 minute voice message: “You won’t believe who I just met…” Imagine you unexpectedly bumped into Jackson Wang. Tell the story to a friend.</p>
+<p><b>Must include:</b> 5 expressions from the lesson (not “have an attack”!) and 3 sentences with <b>would</b>, for example <i>I would have asked him…</i>. Send it to your teacher.</p></div>
+<div class="card"><h3>📱 Task 2: Instagram story</h3><p>Write a funny three-slide story about the same encounter. Slide 1: the moment you see him. Slide 2: your reaction. Slide 3: what you’d do differently next time.</p>
+<textarea id="ig" placeholder="Slide 1:&#10;Slide 2:&#10;Slide 3:"></textarea><div class="row" style="margin-top:8px"><button class="btn" onclick="cp('ig',this)">Copy my story</button></div></div>
+<div class="note">🎉 Amazing work! See you in the next lesson.</div></section>
+
+<footer class="small" style="text-align:center;margin-top:60px;border-top:1px solid var(--line);padding-top:24px">🎵 Jackson Wang: Music, Fame & Fan Culture · English lesson (B1/B1+ → B2)</footer>
+</div>
+
+<button class="btn" id="helpBtn" onclick="hp()">Need help? 🇧🇷 Português</button>
+<div id="help" role="dialog" aria-label="Ajuda em português"><div class="in"><div class="row" style="justify-content:space-between"><h3>🇧🇷 Ajuda rápida</h3><button class="btn ghost" onclick="hp()">Close · Voltar ao inglês</button></div><div id="hb"></div></div></div>
+
+<script>
+const T=["Welcome","Warm-up","Expressions","Would","Dubai","Speaking","Writing","Flashcards","Homework"];
+const V=[
+["freak out","informal · very natural","To react very strongly, from excitement, fear or shock.","Everyday and common.","I freaked out when he liked my comment.","Ficar surtada, reagir de forma exagerada."],
+["fangirl / fanboy (fangirling)","informal · very natural","To act super excited about someone you adore. Can be affectionate or teasing.","Friends, social media.","She’s fangirling over his new album.","Ser fã empolgado(a); surtar de fã."],
+["have a fit","informal · exaggerated","To react in an over-the-top way. Can mean excited OR angry, so check the context.","Jokes, storytelling.","My sister had a fit when she got tickets.","Fazer um escândalo; ter um ataque (de euforia ou raiva)."],
+["lose your mind","informal · natural","To go wild with excitement, or to feel overwhelmed.","Very common in stories.","I would lose my mind if he waved at me.","Perder a cabeça / enlouquecer."],
+["go crazy / go wild","informal · natural","To react with huge energy, as a crowd does at a concert.","Concerts, big news.","The crowd went crazy when he walked on stage.","Enlouquecer; a plateia foi à loucura."],
+["be obsessed with","informal · natural","To think about something constantly. Slightly strong, but often playful.","Hobbies, songs, shows.","I’m obsessed with this song.","Ser obcecada por."],
+["be a huge fan of","neutral · very natural","To like someone or something a lot. Safe in any situation.","Anywhere.","I’m a huge fan of his early music.","Ser muito fã de."],
+["have a crush on","informal · natural","To be romantically attracted to someone, usually secretly.","Teens, friends.","I had a crush on him when I was 12.","Ter uma paixonite por."],
+["starstruck","neutral · natural","So impressed by a famous person that you can’t think or speak.","Stories about meeting famous people.","I was starstruck and forgot my own name.","Deslumbrado(a) / sem palavras diante de um famoso."],
+["scream your lungs out","informal · vivid","To scream or sing as loudly as you possibly can.","Concerts, road trips.","We screamed our lungs out at the chorus.","Gritar/cantar a plenos pulmões."],
+["geek out","informal · natural","To talk with great enthusiasm about something you love, often in detail.","Nerdy, happy conversations.","We geeked out about his vocals for an hour.","Empolgar-se (de um jeito nerd) falando de algo."],
+["be head over heels for","neutral · a bit romantic","To be completely in love with or crazy about someone. It’s stronger than a crush.","Romance, strong feelings.","She’s head over heels for that singer.","Estar loucamente apaixonado(a) por."],
+["can’t get over something","informal · natural","To keep thinking about something because it impressed or shocked you.","After big moments.","I can’t get over that concert.","Não conseguir superar / esquecer algo."],
+["be shook","slang · Gen Z","Shocked or deeply affected. Informal, so avoid it at work or in school essays.","Social media, texting.","I’m shook. He just followed me!","Chocado(a), em choque."],
+["It’s giving…","slang · Gen Z","“It has the vibe of…”. Describes a style or mood.","Fashion, memes.","His new look? It’s giving 90s skater.","“Tem cara de / vibe de…”."],
+["I’m literally dying!","slang · exaggerated","Very funny or overwhelming. Not literal!","Laughing, cringing.","That video is so funny, I’m literally dying!","Estou morrendo (de rir / emoção)."],
+["get emotional","neutral · natural","To feel like crying or become moved.","Concerts, speeches.","I got emotional when he sang that song.","Ficar emocionado(a)."],
+["meet your idol","neutral","To meet a person you admire deeply.","Dreams and stories.","What would you say if you met your idol?","Conhecer seu ídolo."]];
+const Q={w:[["Easy","What song do you replay when you’re in a good mood?"],["Medium","Tell me about the best concert, show or event you’ve been to, or want to go to."],["Medium","Have you ever been obsessed with a singer or a series? What was it, and what was it about it?"],["Challenge","Why do you think fans feel so connected to people they’ve never met?"]],
+q:[["Easy","What would you do if Jackson Wang walked past you on the street?"],["Easy","Would you freak out if he followed you on Instagram? Why or why not?"],["Medium","What would you say if you had only 30 seconds to talk to him?"],["Medium","If you could attend any Jackson Wang concert, which one would you choose and why?"],["Medium","If your best friend started fangirling over a celebrity in public, how would you react?"],["Challenge","What would you do if someone grabbed your favorite artist during a performance?"],["Challenge","If you were a famous singer, what rules would you set for fans, and what would you never accept?"],["Challenge","Would you want to be famous at 15? What would be the best and worst parts?"],["Medium","Would you tell Jackson what you really think of one of his songs, even if it’s negative?"]],
+s:[["Easy","You find out your idol is eating at the table next to yours. What would you do?"],["Medium","Your favorite artist replies to your comment: “Thanks, you’re so sweet!” Your friends are watching. What would you do?"],["Medium","You get free tickets, but the concert is the same night as your exam. What would you do?"],["Challenge","A stranger offers to pay $1,000 for your front-row ticket. Would you sell it? Explain."],["Challenge","A fan posts your location and photos online, and you’re a celebrity. What would you do?"]]};
+const R=["Plot twist: the celebrity is late and stressed.","Plot twist: the fan accidentally calls the celebrity by the wrong name.","Plot twist: the fan is shaking and can’t speak.","Plot twist: the celebrity wants a break and has to say no kindly."];
+const O=["Fans should never take photos of celebrities in private places.","Social media makes fame harder, not easier.","Famous people owe their fans a lot of attention.","Going to concerts is better than listening at home.","Child stars can’t have a normal life."];
+const OF={agree:"Good! Give one reason and one example. Start with “I’d say that…”",disagree:"Interesting! What would someone who disagrees with you say? Answer them.",depends:"Nice, that’s the most B2 answer. Depends on what? Start with “It would depend on…”"};
+const WY=[["Meet Jackson backstage for 2 minutes","Watch him from the front row, perfect view"],["Never use social media again","Never hear your favorite artist’s new music again"],["Be a famous singer","Be the best friend of a famous singer"],["Sing a duet with him badly","Sit in his audience and cry from happiness"]];
+const DQ=["What do you think about what happened?","Was the fan simply excited, or did he cross a boundary? Where exactly is the line?","Have you ever been so excited about something or someone that you almost lost control?","Have you ever done something embarrassing because you were a huge fan?","If your favorite artist invited you on stage, how would you behave? Why?","What would you do if you were Jackson in that situation?","Should celebrities expect this kind of behavior from fans?","Where do we draw the line between admiration and invading someone’s personal space?","The fan was invited on stage. Does an invitation to the stage mean consent to be touched? Explain your view."];
+const H={0:"Bem-vinda! Esta aula é uma conversa sobre Jackson Wang. Responda com motivos e exemplos, não precisa ser perfeita.",1:"<b>replay</b> = ouvir de novo e de novo. <b>vibe</b> = clima/sensação. Responda em voz alta primeiro, depois escreva.",2:"Cada cartão tem o nível de informalidade. <b>Slang</b> = gíria (use com amigos). <b>Have an attack</b> soa como crise médica, então prefira <i>freak out</i>. <b>Starstruck</b> = sem palavras ao ver um famoso.",3:"<b>Would</b> = usado para situações imaginárias: <i>If I met him, I would…</i> (would + verbo base). <b>I’d</b> = I would. Sempre explique o porquê com <i>because…</i>.",4:"<b>To grope</b> = apalpar / passar a mão em alguém sem consentimento (assédio sexual). <b>Groped</b> = passado e particípio (verbo regular). Outro sentido: <i>grope for</i> = tatear à procura de algo. <b>Onstage</b> = no palco. <b>Drawing criticism</b> = recebendo críticas. <b>Consent</b> = consentimento. <b>Cross a line</b> = passar do limite. <b>Personal space</b> = espaço pessoal.",5:"<b>Plot twist</b> = reviravolta. <b>Set a boundary</b> = impor um limite. <b>It depends on…</b> = depende de… No cronômetro, fale sem parar, mesmo errando.",6:"<b>Checklist</b> = lista de verificação. Escreva 120–180 palavras. Use <i>would</i> + verbo base (I would go, não I would went).",7:"Toque no cartão para virar. Frente: expressão em inglês. Verso: significado em português e exemplo.",8:"<b>Voice message</b> = mensagem de voz. Use 5 expressões da aula e 3 frases com <i>would</i>. Seja criativa e engraçada!"};
+let cur=0,seen=new Set([0]);
+const $=i=>document.getElementById(i);
+$("nav").innerHTML='<b style="flex:none;align-self:center;color:var(--pur2);margin-right:6px">🎤 Pop English</b>'+T.map((t,i)=>`<button onclick="go(${i})">${t}</button>`).join("");
+const S=[...document.querySelectorAll("section")];
+function go(n){S[n].scrollIntoView({behavior:"smooth"})}
+function upd(){const y=innerHeight*.35;let n=0;S.forEach((s,i)=>{if(s.getBoundingClientRect().top<=y)n=i});
+if(innerHeight+scrollY>=document.body.scrollHeight-4)n=8;
+cur=n;seen.add(n);const bs=document.querySelectorAll("nav button");bs.forEach((b,i)=>{b.classList.toggle("on",i==n);b.classList.toggle("seen",seen.has(i)&&i!=n)});
+$("pb").style.width=Math.min(100,scrollY/Math.max(1,document.body.scrollHeight-innerHeight)*100)+"%";
+$("hb").innerHTML="<p>"+H[n]+"</p>";$("nav").scrollLeft=bs[n].offsetLeft-90}
+addEventListener("scroll",upd,{passive:true});
+function hp(){$("help").classList.toggle("open")}
+function deal(k,lv){let p=Q[k];if(lv)p=p.filter(x=>x[0]==lv);const x=p[Math.floor(Math.random()*p.length)];
+const m={w:["wl","wq"],q:["ql","qq"],s:[null,"sq"]}[k];if(m[0])$(m[0]).textContent=x[0];$(m[1]).textContent=x[1]}
+$("vgrid").innerHTML=V.map(v=>`<button class="vc" onclick="this.classList.toggle('open')"><b>${v[0]}</b><span class="tag">${v[1]}</span><div class="more">${v[2]}<br><i>When:</i> ${v[3]}<br>💬 “${v[4]}”</div></button>`).join("");
+const CK=[["Your idol waves at you. You…",["had an attack.","freaked out.","were attacked."],1,"“Freak out” is the natural choice. “Have an attack” sounds medical."],["That meme is hilarious.",["I’m literally dying!","I’m literally sick!","I’m literally broken!"],0,"“I’m literally dying!” is the slangy, exaggerated way to say it’s funny."],["A stranger says: “His new look? ___ 90s rockstar.”",["It’s giving","It’s making","It’s having"],0,"“It’s giving…” = it has the vibe of…"]];
+$("chk").innerHTML=CK.map((c,i)=>`<p><b>${c[0]}</b></p><div class="row">${c[1].map((o,j)=>`<button class="opt" onclick="ck(this,${i},${j})">${o}</button>`).join("")}</div><p class="small" id="ckf${i}"></p>`).join("");
+function ck(b,i,j){const c=CK[i];b.classList.add(j==c[2]?"good":"bad");$("ckf"+i).textContent=j==c[2]?"✓ "+c[3]:"Try again, think about how people really say it."}
+$("wyr").innerHTML=WY.map((w,i)=>`<p class="row">${w.map((o,j)=>`<button class="opt" onclick="this.parentNode.nextElementSibling.textContent='Because…? Start with “I’d rather… because I would…”'">${o}</button>`).join("")}</p><p class="small"></p>`).join("");
+$("dq").innerHTML=DQ.map((q,i)=>`<p><b>${i+1}.</b> ${q}</p>`).join("");
+function rp(){$("rpt").textContent=R[Math.floor(Math.random()*R.length)]}
+let oi=0;function opr(){$("op").textContent=O[oi%O.length];$("opf").textContent=""}
+function opn(k){$("opf").textContent=OF[k]+"  (Tap again for the next opinion.)";oi++;setTimeout(()=>{$("op").textContent=O[oi%O.length]},400)}
+opr();
+let ti=null;function tm(){clearInterval(ti);let s=120;const u=()=>{$("tt").textContent=Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};u();$("tb").textContent="Restart";
+ti=setInterval(()=>{s--;u();if(s<=0){clearInterval(ti);$("tt").textContent="Time’s up! 🎉"}},1000)}
+function wc(){const n=($("wt").value.trim().match(/\S+/g)||[]).length;$("wcn").textContent=n+" words"+(n>=120&&n<=180?" ✓":"")}
+function cp(id,b){const t=$(id).value;const done=()=>{b.textContent="Copied! ✓"};try{navigator.clipboard.writeText(t).then(done,()=>{$(id).select();b.textContent="Select and copy manually"})}catch(e){$(id).select();b.textContent="Select and copy manually"}}
+let D=V.slice(),fi=0;
+function fr(){$("fc").classList.remove("flip");$("ff").textContent=D[fi][0];$("fb").innerHTML="<b>"+D[fi][5]+"</b><br><br>💬 “"+D[fi][4]+"”";$("fcn").textContent=(fi+1)+" / "+D.length}
+function fcn(d){fi=(fi+d+D.length)%D.length;fr()}
+function fcs(){D.sort(()=>Math.random()-.5);fi=0;fr()}
+fr();upd();
+</script></body></html>
